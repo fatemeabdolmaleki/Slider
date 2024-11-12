@@ -1,0 +1,281 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    /* position: relative; */
+    background-image: url(../img/1.jpg);
+    background-position-x: center;
+    background-position-y:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    font-family: "Merienda", cursive;
+    overflow: hidden;
+}
+
+.main {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(-20deg, #616161a5 0%, #9bc5c3c1 100%);
+    border-radius: 20px;
+    box-shadow: 0 0 20px white;
+    z-index: 10;
+    padding-block: 50px;
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    >.article {
+        max-width: 490px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 35px;
+        margin-inline: 50px;
+
+        >p {
+            color: rgb(35, 33, 33);
+            font-size: 22px;
+            margin-bottom: 20px;
+            line-height: 30px;
+            /* font-weight: bold; */
+            text-shadow: 1px 1px 15px white;
+        }
+        >button{
+            padding: 10px 30px;
+            margin: 10px auto;
+            font-size: 16px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: rgb(112, 112, 112);
+            box-shadow: 0 0 15px white;
+            cursor: pointer;
+            transition: .4s ease-in-out;
+            font-family: inherit;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    >.swiper{
+        width: 450px;
+        height: 600px;
+        /* border: 1px solid black; */
+        /* padding: 50px 0; */
+       
+    }
+}
+.swiper-slide{
+    position: relative;
+    box-shadow: 0 0 40px rgb(36, 35, 35);
+    border-radius: 10px;
+    
+    &:nth-of-type(1){
+        background-image: url(../img/The\ Sorting\ Hat\ .jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(2){
+        background-image: url(../img/Hermione’s\ patronus.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(3){
+        background-image: url(../img/Hogwarts\ Owl.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(4){
+        background-image: url(../img/Trio\ favorito.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(5){
+        background-image: url(../img/94.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(6){
+        background-image: url(../img/train.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(7){
+        background-image: url(../img/main\ hall.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(8){
+        background-image: url(../img/2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(9){
+        background-image: url(../img/4\ \(2\).jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(10){
+        background-image: url(../img/4\ \(3\).jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-of-type(11){
+        background-image: url(../img/4\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    >span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white;
+        padding: 7px 18px;
+        margin: 10px;
+        border-radius: 20px;
+        background-color: gray;
+        font-size: 18px;
+        box-shadow: 0 0 10px white;
+    }
+    >h2{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgba(255, 255, 255, 0.68);
+        font-weight: 400px;
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        line-height: 20px;
+        margin: 0 0 20px 20px;
+        text-transform: capitalize;
+        text-shadow: 1px 1px 10px rgb(30, 29, 29);
+      
+    }
+
+}
+
+.me {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: 40px;
+    right: 5px;
+    z-index: 1001;
+    /* border: 1px solid red; */
+
+    >div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+
+
+        &:first-of-type {
+            border-radius: 49% 51% 46% 54% / 74% 77% 23% 26%;
+            background-color: #424965;
+            animation: anime2 infinite alternate 2s;
+
+        }
+
+        &:last-of-type {
+            background-image: url(../img/IMG_20240306_185956_104.jpg);
+            background-size: cover;
+            border-radius: 49% 51% 46% 54% / 37% 31% 69% 63%;
+            animation: anime1 infinite alternate 2s;
+
+        }
+    }
+
+    &:hover {
+        >a {
+            left: -30px;
+            opacity: 1;
+
+            &:nth-of-type(2) {
+                left: -70px;
+            }
+
+            &:nth-of-type(3) {
+                left: -70px;
+            }
+
+            &:nth-of-type(4) {
+                left: -30px;
+            }
+        }
+    }
+
+    >a {
+        position: absolute;
+        left: 30px;
+        text-decoration: none;
+        font-size: 30px;
+        transition: 1s;
+        color: aliceblue;
+        opacity: 0;
+
+        &:first-of-type {
+            top: 0;
+
+        }
+
+        &:nth-of-type(2) {
+            top: 40px;
+        }
+
+        &:nth-of-type(3) {
+            top: 90px;
+        }
+
+        &:nth-of-type(4) {
+            top: 140px;
+        }
+
+    }
+
+
+}
+
+@keyframes anime1 {
+    to {
+        border-radius: 49% 51% 48% 52% / 46% 46% 54% 54%;
+    }
+}
+
+@keyframes anime2 {
+    to {
+        border-radius: 70% 30% 44% 56% / 46% 34% 66% 54%;
+    }
+}
