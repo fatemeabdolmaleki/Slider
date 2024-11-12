@@ -1,7 +1,7 @@
 # Slider
 
 ![viewfinal]()
-- [Demo Project](https://fatemeabdolmaleki.github.io/BankCard-js/)
+- [Demo Project](https://fatemeabdolmaleki.github.io/Slider/)
 
 - Developed by fateme abdolmaleki
 
